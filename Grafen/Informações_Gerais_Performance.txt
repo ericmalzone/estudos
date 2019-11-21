@@ -1,0 +1,18 @@
+Como funciona o Shuffle do spark?
+R: Como os dados no HDFS não ficam no mesmo Nó, dependendo do que você fizer, um join, groupby, ele vai precisar fazer o 
+Shuffle para pegar os dados que estão nos outros Nós/RDD's. 
+
+
+Problema do Collect?
+R: Você pode dar um take() para ver algumas linhas, ou escrever alguns arquivos "saveAsTextFile" e depois ler o arquivo.
+
+
+Tipos de Shuffle (Narrow e Wide):
+   - Narrow, os dados já estão organizados, não ocorrerá shuffle, em casos como union também não acontece shuffle, porque
+você vai fazer um append sem a necessidade de cruzar os dados.
+   - Wide, já é aonde acontece o shuffle, pois ele necessita buscar as informações nos outros Nós/RDD's.
+
+
+Para casos de JOIN em arquivos pequenos(10 a 20 MB), tipo para LOOKUP(buscar algum campo), para melhorar a performance usar "broadcast",
+com isso ele leva o arquivo para o "cliente" e facilita a execução. Exemplo:
+   - arq1.join(broadcast(arq2)) --> arq1 é o arquivo "grande" e arq2 é o arquivo "pequeno".

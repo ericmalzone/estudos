@@ -1,0 +1,5 @@
+Um rdd no spark e simplesmente uma colecao distribuida imutavel de objetos. 
+Cada rdd e dividido em varias particoes, que podem ser calculadas em diferentes nos do cluster. 
+Os rdd podem conter qualquer tipo de objetos Python, Java ou Scala, incluindo classes definidas pelo usuario, o spark utiliza rdd para trabalhar com essas estruturas de dados
+Os usuarios criam RDDs de duas maneiras: carregando um conjunto de dados externo ou distribuindo uma colecao de objetos (por exemplo, uma lista ou conjunto) em seu programa de driver. 
+Para carregar um arquivo de texto com um RDD de strings usamos SparkContext.textFile()

@@ -1,0 +1,12 @@
+Lionel Messi,Atacante,Barcelona,Esquerda
+Philippe Coutinho,Meia,Barcelona,Direita
+Bruno Peres,Zagueiro,São Paulo,Direita
+Hernanes,Meia,São Paulo,Esquerda
+Cristiano Ronaldo,Atacante,Juventus,Direita
+Leonardo Bonucci,Atacante,Juventus,Direita
+Orinho,Lateral Direito,Santos,Direita
+Jorge,Lateral Esquerdo,Santos,Direita
+Lucas Verissimo,Zagueiro,Santos,Esquerda
+Fagner,Zagueiro,Corinthians,Direita
+Cassio,Goleiro,Corinthians,Esquerda
+Rogerio Ceni,Goleiro,São Paulo,Direita
